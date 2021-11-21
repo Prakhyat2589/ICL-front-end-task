@@ -1,0 +1,496 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Light.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Light.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Light.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Light.ttf)
+      format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-LightItalic.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-LightItalic.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-LightItalic.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-LightItalic.ttf)
+      format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Regular.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Regular.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Regular.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Regular.ttf)
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Italic.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Italic.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Italic.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Italic.ttf)
+      format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Bold.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Bold.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Bold.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Bold.ttf)
+      format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-BoldItalic.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-BoldItalic.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-BoldItalic.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-BoldItalic.ttf)
+      format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Medium.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Medium.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Medium.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-Medium.ttf)
+      format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: firasans;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-MediumItalic.eot);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-MediumItalic.eot#iefix)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-MediumItalic.woff)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/fira-sans/FiraSans-MediumItalic.ttf)
+      format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: imperial-icons;
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/icons/fonts/imperial-icons.eot?vrmf2d=);
+  src: url(https://www.imperial.ac.uk/T4Assets/fonts/icons/fonts/imperial-icons.eot#iefixvrmf2d)
+      format("embedded-opentype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/icons/fonts/imperial-icons.woff?vrmf2d=)
+      format("woff"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/icons/fonts/imperial-icons.ttf?vrmf2d=)
+      format("truetype"),
+    url(https://www.imperial.ac.uk/T4Assets/fonts/icons/fonts/imperial-icons.svg?vrmf2d=#imperial-icons)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  font-family: firasans, sans-serif !important;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+  color: #161515;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+  color: #161515;
+  text-decoration: none;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: 0.67em 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+  width: 100%;
+  height: auto;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+button,
+input,
+select,
+textarea {
+  font-family: firasans !important;
+  font: inherit;
+  margin: 0;
+}
+optgroup {
+  font-weight: 700;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+h1,
+h2,
+h3,
+p,
+span {
+  font-family: firasans;
+}
+.container#content {
+  border-right: 1px solid #d5d8d9;
+  border-bottom: 1px solid #d5d8d9;
+  border-left: 1px solid #d5d8d9;
+  margin-bottom: 24px;
+  padding-top: 0;
+  padding-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#page {
+  clear: both;
+  background: #fff;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px 0 0;
+  clear: both;
+}
+input[type="password"],
+input[type="text"] {
+  width: 90%;
+}
+input[type="submit"] {
+  border-radius: 5px;
+}
+.podcast-entry .text {
+  width: 100%;
+  padding: 40px;
+}
+
+h3.item-header {
+  color: #161515;
+  font-size: 2rem;
+  display: block;
+  position: relative;
+  padding: 0;
+  color: inherit;
+  font-weight: 700 !important;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #003e74;
+  height: 66px;
+}
+.logo img {
+  width: 177px;
+}
+
+.site-wrap:before {
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  background: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+/****** Search Css Starts ********************/
+
+#search-area {
+  float: right;
+  border: 1px solid #bdc2c8;
+  z-index: 12;
+  position: relative;
+}
+
+#search-area #search-inner-wrapper {
+  float: left;
+}
+
+#search-area #search-inner-wrapper input[type="text"],
+#search-area #search-inner-wrapper input[type="number"] {
+  border-radius: 0;
+  padding: 8px;
+  margin-bottom: -3px;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  color: #003e74;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#search-area #searchSubmit {
+  border-radius: 0;
+  height: 27px;
+  width: 27px;
+  display: inline;
+  float: right;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #003e74;
+  text-indent: -99999px;
+  margin: 3px ​11px 0;
+  outline: none;
+  transition: color 0.2s ease;
+}
+#search-area #searchSubmit:before {
+  font-family: imperial-icons;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-indent: 0;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "b";
+  display: inline;
+  float: right;
+  font-size: 20px;
+  position: relative;
+  color: inherit;
+  text-align: left;
+}
+/****** Search Css Ends ********************/
+#noresult {
+  display: none;
+  width: 100%;
+  padding: 40px;
+}
+
+#noresult .text {
+  padding: 20px;
+}
+
+.sortButton {
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 20px;
+  border: 0;
+  background: #002147;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+}
+.sortButton:active,
+.sortButton:focus,
+.sortButton:hover {
+  background: #003e74;
+}
+
+.isHidden {
+  display: none;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.podcast-entry .image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .podcast-entry .text {
+    width: calc(100% - 300px);
+  }
+  .podcast-entry .image {
+    width: 300px;
+    height: auto;
+  }
+}
